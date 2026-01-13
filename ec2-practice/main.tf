@@ -17,7 +17,7 @@ resource "aws_vpc_security_group_ingress_rule" "myingressrule" {
   
 }
 resource "aws_key_pair" "myounkey" {
-    public_key = file("~/key.pub")
+    public_key = file("C:/Users/muzhe/.ssh/id_ed25519.pub")
     key_name = "myshownkey"
 
   
