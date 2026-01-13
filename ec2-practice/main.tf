@@ -4,7 +4,7 @@ data "aws_vpc" "myalreadyvpc" {
   
 }
 resource "aws_security_group" "myownsg" {
-    name = "openallsg"
+    name = "openallsg-terraform"
     description = "all network sg"
     vpc_id = data.aws_vpc.myalreadyvpc.id  
 }
