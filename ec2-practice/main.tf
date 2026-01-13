@@ -17,7 +17,7 @@ resource "aws_vpc_security_group_ingress_rule" "myingressrule" {
   
 }
 resource "aws_key_pair" "myounkey" {
-    public_key = file("~/id_key.pub")
+    public_key = file("~/key.pub")
     key_name = "myshownkey"
 
   
